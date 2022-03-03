@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Identity Patches</name>
+	<author>Daria40K</author>
+	<packageId>Daria40K.IdentityPatches</packageId>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
+	<description>Identity Patches
+
+Vanilla Apparel Expanded
+- Shirt and Tie, Skirt, Suit jacket
+
+Vanilla Factions Expanded - Medieval
+- Dame Dress, Dame Hat, King's Crown, King’s Robes
+    </description>
+    <modDependencies>
+        <li>
+            <packageId>cammy.identity.gender</packageId>
+            <displayName>Identity</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2749597658</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+</ModMetaData>

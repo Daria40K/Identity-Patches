@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--
+		Vanilla Apparel Expanded
+	-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Apparel Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Skirt -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VAE_Apparel_Skirt"]/equippedStatOffsets</xpath>
+					<value>
+						<FemStat>5</FemStat>
+					</value>
+				</li>
+
+				<!-- Suit jacket -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VAE_Apparel_SuitJacket"]/equippedStatOffsets</xpath>
+					<value>
+						<MascStat>5</MascStat>
+					</value>
+				</li>
+
+				<!-- Shirt and Tie -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VAE_Apparel_ShirtandTie"]/equippedStatOffsets</xpath>
+					<value>
+						<MascStat>3</MascStat>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
