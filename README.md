@@ -1,6 +1,6 @@
 # Patches mods for Identity mod
 
-![](https://github.com/dave40k/Identity-Patches/blob/main/About/Preview.png)
+![](https://github.com/Daria40K/Identity-Patches/blob/main/About/Preview.png)
 
 ## Apparel Patch
 Vanilla Apparel Expanded
