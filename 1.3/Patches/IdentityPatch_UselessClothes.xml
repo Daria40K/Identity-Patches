@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--
+		Useless clothes
+
+        woolsuitpants = suit with pants
+        woolschoolpants = school uniform pants
+        woolshirtpants = shirt with pants
+
+        woolschooluniform_Thin = suit with skrit
+        woolschoolskirt = school uniform skirt
+        wooluniform = shirt with stockings
+	-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Useless clothes</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+                <!-- suit with pants -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="woolsuitpants"]/equippedStatOffsets</xpath>
+					<value>
+						<MascStat>5</MascStat>
+					</value>
+				</li>
+
+                <!-- school uniform pants -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="woolschoolpants"]/equippedStatOffsets</xpath>
+					<value>
+						<MascStat>5</MascStat>
+					</value>
+				</li>
+
+                <!-- shirt with pants -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="woolshirtpants"]/equippedStatOffsets</xpath>
+					<value>
+						<MascStat>5</MascStat>
+					</value>
+				</li>
+
+				<!-- suit with skrit -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="woolschooluniform_Thin"]/equippedStatOffsets</xpath>
+					<value>
+						<FemStat>5</FemStat>
+					</value>
+				</li>
+
+				<!-- school uniform skirt -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="woolschoolskirt"]/equippedStatOffsets</xpath>
+					<value>
+						<FemStat>5</FemStat>
+					</value>
+				</li>
+
+                <!-- shirt with stockings -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="wooluniform"]/equippedStatOffsets</xpath>
+					<value>
+						<FemStat>5</FemStat>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
