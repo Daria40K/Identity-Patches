@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--
+		Vanilla Factions Expanded - Medieval
+	-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- King's Crown -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VFEM_Apparel_KingsCrown"]/equippedStatOffsets</xpath>
+					<value>
+						<MascStat>6</MascStat>
+					</value>
+				</li>
+
+				<!-- King’s Robes -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VFEM_Apparel_KingsRobes"]/equippedStatOffsets</xpath>
+					<value>
+						<MascStat>5</MascStat>
+					</value>
+				</li>
+
+				<!-- Dame Hat -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VFEM_Apparel_DameHat"]/equippedStatOffsets</xpath>
+					<value>
+						<FemStat>6</FemStat>
+					</value>
+				</li>
+
+				<!-- Dame Dress -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VFEM_Apparel_DameDress"]/equippedStatOffsets</xpath>
+					<value>
+						<FemStat>5</FemStat>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
